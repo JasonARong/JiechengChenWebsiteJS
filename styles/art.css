@@ -1,0 +1,346 @@
+@import url(global.css);
+body{
+    background-attachment: fixed;
+}
+main{
+    margin-top: 18vh;
+
+}
+
+
+/* Art */
+#art h3, #art p{
+    text-align: center;
+    
+}
+#art p{
+    color: #c4c4c4;
+}
+
+#artIntro{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap; */
+}
+#artIntro h2{
+    font-size: 2.8rem;
+    max-width: 790px;
+    width: 95vw;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 12vmin;
+}
+#artIntro h2 span{
+    font-size: 3.2rem;
+    background: linear-gradient(130.24deg, #77cafa , #bcf8ea , #a494fd, #77cafa );
+    background-size: 600% 600%;
+    animation: gradient 18s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#artIntro div{
+    width: 20rem;
+
+    padding:25px;
+    margin-left: 4vw;
+    /* visibility: hidden; */
+
+}
+#artIntro h3, #artIntro p{
+    text-align: left;
+}
+#artIntro p{
+    line-height: 1.7;
+}
+
+
+.gallery{
+    width: 95vw;
+    max-width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    justify-items: center; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.gallery img, #bigGallery img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform .2s;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.3);
+    /* border: 8px solid #ffffff24; */
+    
+}
+.gallery img:hover, #bigGallery img:hover{
+    transform: scale(0.95);
+}
+
+.galleryH{
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.galleryP{
+    margin-bottom: 20vmin;
+    font-weight: 100;
+    word-spacing: 5px;
+    
+}
+
+
+
+#bigGallery{
+    width:100%;
+    max-width: 790px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+
+
+
+/* Media */
+#media{
+    padding: 25px;
+    margin-bottom: 8vmin;
+}
+#mediaHeader{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15vmin;
+}
+#mediaHeader img{
+    display: block;
+    border-radius: 20px;
+    margin-left: 30px;
+    width: 23vw;
+    min-width: 200px;
+    object-fit: cover;
+}
+
+
+#media h2{
+    font-size: 1.5rem;
+}
+#media h2 span{
+    font-size: 3rem;
+    background: linear-gradient(160.24deg, #9ad6f9 13.69%, #e6b5fd 57.91%, #8b9cfb 100%);
+    background-size: 300% 300%;
+    animation: gradient 5s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+
+
+noscript a{
+    color: white;
+    text-decoration: underline;
+}
+
+#videoDisplay{
+
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 1fr;
+}
+#videoDisplay video{
+    width: 100%;
+    /* max-width: 1280px; */
+    /* max-width: 950px; */
+    background-color: white;
+}
+#videoList{
+    margin: 0;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    max-width: 500px;
+}
+#videoList li{
+    max-width: 500x;
+    min-width: 342px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 170px 1.1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-column-gap: 6px;
+    align-items: start;
+    margin-bottom: 5px;
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 5px;
+} 
+#videoList li img{
+    grid-area: 1 / 1 / 3 / 2;
+    width: 170px;
+    height: 95px;
+    border-radius: 3px;
+    font-weight: 300;
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+}
+#videoList li h3{
+    grid-area: 1 / 2 / 2 / 3;
+    margin:0;
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: 400;
+}
+#videoList li p{
+    grid-area: 2 / 2 / 3 / 3;
+    margin:0;
+    margin-top: 9px;
+    color: #c4c4c4;
+    font-size: 14px;
+    font-weight: 400;
+    vertical-align: text-top;
+}
+#videoList li p span{
+    font-size: 11px;
+    font-style: normal;
+}
+#videoList li:hover{
+    background-color: rgba(255, 255, 255, 0.123);
+    transition: 0.2s;
+}
+
+#videoDescription h3{
+    margin-bottom: 5px;
+}
+
+#videoDescription h4{
+    color:#c4c4c4;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.4;
+}
+#videoDescription p{
+    font-family: sans-serif;
+    min-height: 70px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+
+
+
+#mediaIntro{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    max-width: 470px;
+}
+#mediaIntro h4{
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+#mediaIntro h3{
+    font-size: 1.6rem;
+    margin-top:8px;
+    margin-bottom: 5px;
+    background: linear-gradient(130.24deg, #77cafa , #a494fd, #f19fff );
+    background-size: 600% 600%;
+    animation: gradient 18s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#mediaIntro p{
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 815px){
+    #bigGallery{
+        width: 100%;
+        max-width: 520px;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+} 
+
+
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px){
+    /* art */
+    #artIntro h2{
+        font-size: 5vmin;
+    }
+    #artIntro h2 span{
+        font-size: 8vmin;
+    }
+
+    /* media */
+    @media only screen and (orientation: portrait){
+        #mediaHeader{
+            display: block;
+        }
+        #mediaHeader img{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media only screen and (orientation: landscape){
+        
+    }
+
+    
+    #videoDisplay{
+        display: block;
+    }
+    #videoList{
+
+        max-width: 100%;
+    }
+    #mediaIntro{
+        max-width: 100%;
+    }
+
+    @media only screen and (max-width: 405px){
+        #videoList li{
+            grid-template-columns: 1.1fr 0.9fr;
+            min-width: 0px;
+        }
+        #videoList li img{
+            width: 100%;
+        } 
+
+        #videoList li h3{
+            font-size: 4vw;
+        }
+        #videoList li p{
+            font-size: 3.7vw;
+        }
+    }
+    
+
+}

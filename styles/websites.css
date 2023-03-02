@@ -1,0 +1,315 @@
+@import url(global.css);
+
+*{
+    /* border:1px solid red; */
+}
+main{
+    margin-top: 20vh;
+    
+}
+
+p em{
+    color: #c4c4c4;
+    font-size: 12px;
+}
+
+.learnMoreButton a{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* triton 2 go + */
+#triton2goplus{
+    padding: 10px;
+}
+
+#tritonIntro{
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.126) , #000000), url('../images/triton2goplus.jpg');
+    background-size: cover;
+    width: 65.5vw;
+    height: 33.38vw;
+    min-width: 535px;
+    min-height: 246px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    padding:3vmin
+
+}
+
+#tritonIntro p{
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+
+
+#tritonVisit{
+    width: 65.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: max(25px, 9vh);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#tritonVisit .learnMoreButton{
+    margin-left: auto;
+}
+
+#tritonVisit img{
+    border-radius: 10px;
+}
+#tritonVisit h3{
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+#tritonVisit p{
+    margin-top: 5px;
+    padding-left: 15px;
+    color:#c4c4c4;
+}
+
+
+#tritonDisplay{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: max(25px, 9vh);
+}
+#tritonDisplay img{
+    border-radius: 10px;
+    width: 260px;
+}
+#tritonDisplay img:hover{
+
+}
+
+
+#tritonApp{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+#tritonApp h3 span{
+    font-size: 1.5rem;
+    background: linear-gradient(130.24deg, #77cafa , #f8f5bc , #94cafd, #ebfa77 );
+    background-size: 600% 600%;
+    animation: gradient 18s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#tritonApp>div{
+    box-sizing: border-box;
+    width: 30vw;
+    min-width: 300;
+    background: linear-gradient(153.08deg, rgba(255, 255, 255, 0.05) -9.7%, rgba(255, 255, 255, 0.02) 121.69%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 2px 15px rgba(255, 255, 255, 0.028);
+
+    padding: 15px
+}
+#tritonApp>div p{
+    font-weight: 100;
+    line-height: 1.7;
+}
+#tritonApp img{
+    width: 30vw;
+    min-width: 300px;
+}
+
+#tritonApp .learnMoreButton{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/*superstate*/
+#superstate, #Dongyiheng{
+    box-sizing: border-box;
+    margin-top: 17vh;
+    margin-bottom: 5vh;
+    width: 65.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+#superstate h2{
+    font-size: 4rem;
+    background: linear-gradient(130.24deg, #8cdcf2 , #DBD9D6, #FAF4D2);
+    background-size: 600% 600%;
+    animation: gradient 18s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* text-align: center; */
+    margin-bottom: -13vmin;
+    transform: translateY(-15vmin);
+}
+
+#superstate img, #Dongyiheng img{
+    border-radius: 10px;
+}
+
+#superScreen{
+    width:50vw;
+    min-width: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visitSec{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: max(30px, 8vh);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.visitSec .learnMoreButton{
+    margin-left: auto;
+}
+
+.visitSec h3{
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+.visitSec p{
+    margin-top: 5px;
+    padding-left: 15px;
+    color:#c4c4c4;
+}
+.visitSec img{
+    border-radius: 10px;
+}
+.descriptionSec{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c4c4c4;
+    font-weight: 200;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 1.7;
+}
+.descriptionSec span{
+    color: white;
+    font-weight: 500;
+}
+
+/* Dongyiheng */
+#Dongyiheng h2 span{
+    font-size: 4rem;
+    background: linear-gradient(130.24deg, #e4270f , #ffbe5b, #fff1ac);
+    background-size: 600% 600%;
+    animation: gradient 18s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* text-align: center; */
+    margin-bottom: -13vmin;
+    transform: translateY(-15vmin);
+}
+
+
+#nextButton{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px){
+    @media only screen and (orientation: portrait){
+        #tritonIntro{
+            box-sizing: border-box;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.238) , #000000), url('../images/triton2goplusPhone.jpeg');
+            width: 80vw;
+            height: 160vw;
+            min-width: 0;
+            min-height: 0;
+        }
+
+    }
+    @media only screen and (max-width: 380px){
+        #tritonVisit{
+            width: 95vw;
+        }
+    }
+  
+    #tritonVisit img{
+        width: 45px;
+        height: 45px;
+    }
+    #tritonVisit h3{
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    #tritonVisit p{
+        font-size: 13px;
+        padding-left: 5px;
+    }
+    #tritonVisit .learnMoreButton a, .visitSec .learnMoreButton a{
+        padding: 6px 17px;;
+    }
+    #tritonApp{
+        display: block;
+    }
+
+    #tritonApp>div{
+        width: 94vw;
+    }
+    #tritonApp img{
+        display: block;
+        width: 80vw;
+        min-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    #superstate, #Dongyiheng{
+        width: 99vw;
+        padding: 20px;
+    }
+    #superstate h2{
+        font-size: 3rem;
+    }
+
+    .visitSec img{
+        width: 45px;
+        height: 45px;
+    }
+    .visitSec h3{
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    
+    .visitSec p{
+        font-size: 13px;
+        padding-left: 5px;
+    }
+    
+
+}

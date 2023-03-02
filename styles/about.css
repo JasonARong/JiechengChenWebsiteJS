@@ -1,0 +1,112 @@
+@import url(global.css);
+
+main{
+    margin-top: 20vh;
+}
+
+/* Quick Intro*/
+#quickIntro{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#quickIntro section{
+    padding: 1vh 2vw;
+    width:20vw;
+    min-width: 222px;
+}
+#quickIntro h2 span{
+    font-size: 2rem;
+    background: linear-gradient(130.24deg, #77cafa , #bcf8ea , #a494fd, #77cafa );
+    background-size: 600% 600%;
+    animation: gradient 18s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#quickIntro p{
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.7; 
+}
+
+#quickIntro img{
+    border-radius: 20px;
+    margin-left: 4vw;
+    width: 25vw;
+}
+
+/* details */
+#details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 65.5vw;
+    min-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#details img{
+    border-radius: 50%;
+    width:20vw
+}
+
+#textDetails{
+    margin-left: 28px;
+}
+
+#textDetails h2{
+    margin-bottom: 5px;
+}
+#textDetails p{
+    margin-top: 5px;
+    line-height: 1.7; 
+    font-weight: 300;
+    color: #c4c4c4;
+}
+#textDetails p strong{
+    font-weight: 400;
+    color: white;
+}
+
+
+
+/* Responsive Design */
+/* @media only screen and (orientation: portrait){
+    #quickIntro{
+        display: block;
+    }
+} */
+
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px){
+    #quickIntro{
+        display: block;
+    }
+    #quickIntro section{
+        width:100vw;
+        box-sizing: border-box;
+    }
+    #quickIntro img{
+        display: block;
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+
+    /* details */
+    #details{
+        box-sizing: border-box;
+        display: block;
+        width: 100vw;
+        min-width: 0;
+    }
+    #textDetails{
+        margin-left: 0;
+    }
+}

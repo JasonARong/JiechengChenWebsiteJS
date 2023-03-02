@@ -1,0 +1,229 @@
+@import url(global.css);
+*{
+    /* border: 1px solid red; */
+}
+#worksNav{
+    /* font-weight: bold; */
+}
+
+/* websites */
+#web h2 span{
+    font-size: 3.5rem;
+    background: linear-gradient(130.24deg, #77cafa , #bcf8ea , #a494fd, #77cafa );
+    background-size: 600% 600%;
+    animation: gradient 18s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#web h2{
+    /* text-align: center; */
+    margin: 2.5vmax;
+    max-width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+#web{
+    box-sizing: border-box;
+    width: 65.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    padding-left: max(3vmin, 5px);
+    padding-right: max(3vmin, 5px);
+}
+#picTextWrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 1rem;
+    margin: 2vh;
+    margin-bottom: 0.5vh;
+    justify-items: center;
+
+    max-width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 10px 20vw; */
+}
+
+#picTextWrapper div{
+    min-width: 281px;
+}
+#picTextWrapper div p{
+    color: #c4c4c4;
+    font-weight: 300;
+    
+}
+
+.webImg{
+    margin:10px;
+    width: 21vw;
+    min-width: 250px;
+}
+
+
+
+#learnWebsiteButton{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2.5vmax;
+    margin-top: 0;
+}
+
+
+/* UI */
+#ui{
+    margin-top: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ui img{
+    border: 1px solid rgba(142, 163, 224, 0.313);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(206, 206, 206, 0.149);
+}
+
+#ui section{
+    box-sizing: border-box;
+    margin: 40px 0px 40px 50px;
+    width: 30vw;
+    min-height: 300px;
+    padding: max(3vmin,5px);
+}
+#ui h2 span{
+    font-size: 2.8rem;
+    background: linear-gradient(160.24deg, #9ad6f9 13.69%, #e6b5fd 57.91%, #8b9cfb 100%);
+    background-size: 300% 300%;
+    animation: gradient 5s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#ui h2{
+    margin-top: 5px;
+}
+#ui h3{
+    font-weight:600;
+}
+
+#ui p{
+    color: #c4c4c4;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 1.7;
+}
+
+#learnUIButton{
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 1vmax; */
+    margin-top: 0;
+}
+
+
+
+/* Art */
+#art{
+    box-sizing: border-box;
+    margin-top: 23vh;
+    margin-bottom: 17vh;
+    width: 65.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 400px;
+    padding: max(3vmin, 5px);
+}
+#art h2 span{
+    font-size: 3rem;
+    background: linear-gradient(132.6deg, #418DFF -0.17%, #A7FFDF 49.13%, #FFE141 99.46%);
+    background-size: 300% 300%;
+    animation: gradient 7s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+#art p{
+    color: #c4c4c4;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 1.7;
+}
+#art p strong{
+    color: white;
+    font-weight: 400;
+}
+
+#art img{
+    display: block;
+    max-width: 800px;
+    width: 60vw;
+    min-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -13vmin;
+    transform: translateY(-13vmin)
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%,-13vmin); */
+}
+#learnArtButton{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+}
+
+
+
+/* Responsive Design */
+/* Phone */
+@media only screen and (max-width: 767px), 
+screen and (max-height: 767px){
+    /* Websites */
+    #web{
+        box-sizing: border-box;
+        width: 99.5vw;
+        
+    }
+    #picTextWrapper{
+        /* justify-items: start; */
+        padding: min(10px,0.03vw)
+    }
+    /* .webImg{
+       margin-left: 0;
+    } */
+    @media only screen and (max-width: 290px){
+        #picTextWrapper{
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        }
+        #picTextWrapper p, #picTextWrapper h3{
+            padding-left: 10px;
+        }
+    }
+
+
+    /* UI */
+    #ui{
+        display:block;
+    }
+    #ui section{
+        margin: 0;
+        width: 99.5vw;
+    }
+    #ui img{
+        display: block;
+        width: 55vmin;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Art */
+    #art{
+        width: 99.5vw;
+    }
+}
