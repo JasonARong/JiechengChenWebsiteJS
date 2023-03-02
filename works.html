@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Jiecheng's personal portfolio site" />
+	    <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jiecheng's portfolio</title>
+        <link href="styles/work.css" rel="stylesheet"  type="text/css"/>
+        <!-- <link href="styles/tablet.css" rel="stylesheet" media="screen and (max-width: 1180px)" type="text/css"/> -->
+        <!-- <link href="styles/phone.css" rel="stylesheet" media="screen and (max-width:767px), screen and (max-height: 767px)" type="text/css"/> -->
+
+        <link href="images/favicon.ico" rel="icon">
+
+    </head>
+    <body>
+        <div class="iconNav">        
+            <a href="./index.html" style="text-decoration: none;">
+                <div class="siteIcon">J</div>
+            </a>
+            
+            <nav aria-label="main" class="navBar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html" id="worksNav">Works</a>
+                        <div class="dropdown-content">
+                            <a href="websites.html">Webites</a><br/>
+                            <a href="ui.html" id="uiLink">UI</a><br/>
+                            <a href="art.html" id="artLink">Art</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <input type="checkbox" class="menuCheck">
+            <div class="hamburger">
+                <span class="line" id="line1"></span>
+                <span class="line" id="line2"></span>
+            </div>
+            <nav aria-label="phoneNav" class="phoneNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div>
+                            <a href="websites.html">Webites</a><br/>
+                            <a href="ui.html">UI</a><br/>
+                            <a href="art.html">Art</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <header id="pageHeader">            
+            <h1>WORKS</h1>
+        </header>
+        <main>
+            <section id="web" class="sec">
+                <div><h2>I make beautiful <span>Websites</span> ...</h2></div>
+                
+                <div id="picTextWrapper">                
+                    <img src="./images/triton2goplus.JPG" alt="screenshot of triton 2 go plus website"  class="webImg">
+                    <div>
+                        <h3>Triton 2 Go +</h3>
+                        <p>A Critical Design School Project</p>
+                    </div>   
+                    
+                    <img src="./images/superstate.jpg" alt="screenshot of triton 2 go plus website"  class="webImg">
+                    <div>
+                        <h3>Superstate</h3>
+                        <p>Website of a Swedish start-up company</p>
+                    </div>                    
+                    </div>
+                </div> 
+                <div id="learnWebsiteButton" class="learnMoreButton">
+                    <a href="websites.html">Learn more</a>
+                </div>
+            </section>
+            <!-- <button onclick="window.location.href='works.html';">learn more</button> -->
+            
+            
+
+            <section id="ui">
+                <img src="./images/Home.jpg" alt="screenshot of art place prototype" width="252" height="560">
+                <section  class="sec">
+                    <h2><span>UI</span> design is my specialty</h2>
+                    <h3>Art Place</h3>
+                    <p><strong>A personal UI design project.</strong>  From low fidelity wire-framing to high fidelity fully interactive prototype, 
+                        I have created a modern and user-friendly UI design for my fitional art-sharing platform Art Place.
+                    </p>
+                    <div id="learnUIButton" class="learnMoreButton">
+                        <a href="ui.html">Learn more</a>
+                    </div>
+                </section>
+            </section>
+
+            <section id="art" class="sec">                 
+                <img src="./images/ArtGroup.webp" alt="A group of Jiecheng's art">
+                
+                <h2>I am a inspired <span>Artist</span></h2>
+                <p><strong>I create art pieces in many different formats.</strong> 
+                I work as editor, cameraman and director for media art productions. 
+                And I also capable at digital illustrations, ceramics, photography and image manipulations
+                </p>
+                
+                <div id="learnArtButton" class="learnMoreButton">
+                    <a href="art.html">Learn more</a>
+                </div>
+                
+            </section>
+
+
+
+        </main>
+        <footer>
+            <h3>Jiecheng Chen</h3>
+            <p>Developer · Designer · Artist</p>
+            <p id="copyright">&copy; Jiecheng Chen Portfolio 2023 | Designed and Coded by Jiecheng</p>
+        </footer>
+    </body>
+
+
+
+</html>

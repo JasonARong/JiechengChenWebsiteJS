@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Jiecheng's personal portfolio site" />
+	    <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jiecheng's portfolio</title>
+        <link href="styles/ui.css" rel="stylesheet" type="text/css"/>
+        <link href="images/favicon.ico" rel="icon">
+
+    </head>
+    <body>
+        <div class="iconNav">        
+            <a href="./index.html" style="text-decoration: none;">
+                <div class="siteIcon">J</div>
+            </a>
+            
+            <nav aria-label="main" class="navBar">
+                <ul>
+                    <li><a href="index.html" id="homeNav">Home</a></li>
+                    <li><a href="works.html">Works</a>
+                        <div class="dropdown-content">
+                            <a href="websites.html">Webites</a><br/>
+                            <a href="ui.html" id="uiLink">UI</a><br/>
+                            <a href="art.html" id="artLink">Art</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <input type="checkbox" class="menuCheck">
+            <div class="hamburger">
+                <span class="line" id="line1"></span>
+                <span class="line" id="line2"></span>
+            </div>
+            <nav aria-label="phoneNav" class="phoneNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div>
+                            <a href="websites.html">Webites</a><br/>
+                            <a href="ui.html">UI</a><br/>
+                            <a href="art.html">Art</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        
+        <header id="pageHeader">            
+            <h1>UI</h1>
+        </header>
+
+
+        <main>
+            <section id="uiHero">
+                <div>
+                    <h2><span>ART</span> PLACE</h2>
+                    <h3>UI Design | Wireframe | Prototype</h3>
+                </div>
+            </section>
+            <div id="mockUps">
+                <img src="./images/homeMockup.webp" alt="screenshot of art place prototype home page" width="252">
+                <img src="./images/followingMockup.webp" alt="screenshot of art place prototype following page" width="252">
+                <img src="./images/profileMockup.webp" alt="screenshot of art place prototype profile page" width="252">
+            </div>
+
+            <div id="artVisit" class="visitSec">
+                <img src="./images/ArtPlaceIcon.jpg" alt="Art Place prototype icon" width="60" height="60">
+                <div>
+                    <h3>Art Place</h3>
+                    <p>UI design project</p>
+                </div>
+                <div class="learnMoreButton">
+                    <a href="https://www.figma.com/file/6d8TCceynJqbodPRqffmvS/ArtPlace-prototype?node-id=1265%3A8839&t=lDkJD4ohjOTayA9P-1" target="_blank">
+                        Visit</a>
+                </div>
+            </div>
+
+            <section class="sec" id="discription">
+                <h3>UI design project</h3>
+                <p>A personal UI design project. From low fidelity wire-framing to high fidelity fully interactive prototype, 
+                    I have created a modern and user-friendly UI design for my fitional art-sharing platform Art Place.
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+            </section>
+
+            <section id="prototype">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6d8TCceynJqbodPRqffmvS%2FArtPlace-prototype%3Fnode-id%3D564%253A5823%26scaling%3Dscale-down%26page-id%3D564%253A5680%26starting-point-node-id%3D564%253A5823" allowfullscreen></iframe>
+                <div id="prototypeIntro" class="sec">
+                    <h3><span>Interactive</span><br>Prototype</h3>
+                    <p><em>Click the screen or use the button <br> to start interaction</em></p>
+                    <div class="learnMoreButton">
+                        <a href="https://www.figma.com/proto/6d8TCceynJqbodPRqffmvS/ArtPlace-prototype?node-id=564%3A5823&scaling=scale-down&page-id=564%3A5680&starting-point-node-id=564%3A5823" target="_blank">
+                            Try it out</a>
+                    </div>
+                </div>
+                
+            </section>
+
+            <div class="learnMoreButton" id="nextButton">
+                <a href="./art.html">Next, Art</a>
+            </div>
+        </main>
+
+
+        <footer>
+            <h3>Jiecheng Chen</h3>
+            <p>Developer · Designer · Artist</p>
+            <p id="copyright">&copy; Jiecheng Chen Portfolio 2023 | Designed and Coded by Jiecheng</p>
+        </footer>
+    </body>
+
+
+
+</html>

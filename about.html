@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Jiecheng's personal portfolio site" />
+	    <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jiecheng's portfolio</title>
+        <link href="styles/about.css" rel="stylesheet" type="text/css"/>
+        <link href="images/favicon.ico" rel="icon">
+
+    </head>
+    <body>
+        <div class="iconNav">        
+            <a href="./index.html" style="text-decoration: none;">
+                <div class="siteIcon">J</div>
+            </a>
+            
+            <nav aria-label="main" class="navBar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a>
+                        <div class="dropdown-content">
+                            <a href="websites.html">Webites</a><br/>
+                            <a href="ui.html" id="uiLink">UI</a><br/>
+                            <a href="art.html" id="artLink">Art</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <input type="checkbox" class="menuCheck">
+            <div class="hamburger">
+                <span class="line" id="line1"></span>
+                <span class="line" id="line2"></span>
+            </div>
+            <nav aria-label="phoneNav" class="phoneNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div>
+                            <a href="websites.html">Webites</a><br/>
+                            <a href="ui.html">UI</a><br/>
+                            <a href="art.html">Art</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <header id="pageHeader">            
+
+            <h1>About Me</h1>
+
+        </header>
+        <main>
+            <section id="quickIntro">
+                <section class="sec">
+                    <h2>Hi!<br>
+                        I am <span>Jiecheng</span> Chen</h2>
+                    <p> I'm a student with a passion for front-end development, design, and visual art.
+                        <span style="color:#c4c4c4; font-weight:300">  
+                        I have a talent for combining technical skills with a creative eye to produce beautiful and 
+                        functional websites. </span></p>
+                </section>
+                <img src="./images/fullshot.jpg" alt="A picture of Jiecheng" width ="320">
+            </section>
+
+            <section id="details" class="sec">
+                <img src="./images/profile.JPG" alt="Jiecheng's profile photo" width ="300">
+                <div id="textDetails">
+                    <div>
+                        <h2>As a Developer</h2>
+                        <p> <strong>I am familiar with multiple programming languages</strong>, including Java, JavaScript, C, C# and C++. 
+                            As a Computer Science minor at UC San Diego, a free lancing web dev and a video game enthusiast. 
+                            I have experience with programming, website building and game development
+                        </p>
+                    </div>
+                    <div>
+                        <h2>As a Designer</h2>
+                        <p><strong>I put User-Centered-Design principles into practice</strong>, by designing websites and interfaces that are
+                            useful, usable and enjoyable. Furthermore, my artistic sense helps my designs to be not only user-friendly, 
+                            but also aesthetically pleasing.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>As an Artist</h2>
+                        <p><strong>I create art pieces in many different formats.</strong> 
+                            I work as editor, cameraman and director for media art productions. 
+                            And I also capable at digital illustrations, ceramics, photography and image manipulations
+                        </p>
+                    </div>     
+                </div>
+                                               
+            </section>
+        </main>
+        <footer>
+            <h3>Jiecheng Chen</h3>
+            <p>Developer · Designer · Artist</p>
+            <p id="copyright">&copy; Jiecheng Chen Portfolio 2023 | Designed and Coded by Jiecheng</p>
+        </footer>
+    </body>
+
+
+
+</html>
