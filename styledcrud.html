@@ -21,12 +21,6 @@
             if(roughArray != null && roughArray != ''){
                 array = JSON.parse(localStorage.getItem("myArray"));
             }
-            if(array !== null){
-                if(array.length != 0)
-                {
-                    console.log('array: '+ array);
-                }
-            }
             
 
 
@@ -128,7 +122,6 @@
             import {addPost, creatPost} from './blog.js';
             import {changeTheme} from './styledcrud.js';
             window.addEventListener("load", (event) => {
-                console.log("page is fully loaded");
                 
                 if(array !== null){
                     if(array.length != 0)
