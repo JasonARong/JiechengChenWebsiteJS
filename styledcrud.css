@@ -1,0 +1,127 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+/* dialog */
+dialog{
+    border: none;
+    border-radius: 5px;
+}
+dialog p{
+    margin-top: 5px;
+}
+dialog label{
+    font-size: 12px;
+    color: #656565;
+}
+#postTitle, #editTitle {
+    margin-bottom: 9px;
+}
+dialog button, dialog .cancel{
+    color:#303030;
+    border: none;
+    border-radius: 3px;
+    padding:5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    transition: 0.1s;
+}
+dialog button:hover, dialog .cancel:hover{
+    background-color: #d5d5d5;
+}
+
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: rgb(0, 90, 159);
+}
+header button{
+    border: none;
+    margin-left: auto;
+    background-color: rgb(0, 90, 159);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header button:hover{
+    background-color: rgb(0, 74, 131);
+
+}
+header h1{
+    margin:0;
+    margin-left: 8vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+header h1 span{
+    font-size: 2.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffbf00;
+}
+
+/* main */
+main{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    background-color: #fafafa;
+}
+
+.individualPost h3{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.individualPost h4{
+    font-size: 12px;
+    font-weight: 300;
+    color: #656565;
+    margin-top: 5px;
+}
+.individualPost p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.individualPost hr{
+    border-top: 0.5px solid #e6e6e6;
+}
+main button{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+    margin-right: 2px;
+    transition: 0.1s;
+}
+main button:hover{
+    background-color:#d5d5d5;
+}
+
+
+
+
+/* footer */
+footer{
+    padding-top: 20px;
+    padding-left: 8vw;
+    margin-bottom: 30px;
+}
+#newBtn{
+    color:white;
+    background-color:rgb(0, 90, 159);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.1s;
+    border: none;
+    border-radius: 5px;
+}
+#newBtn:hover{
+    background-color: #ffbf00;
+}

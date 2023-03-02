@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="HW4 part1 and part2" />
+        <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dialogs</title>
+
+
+
+    </head>
+
+    <body>
+        <h1>Simple Dialogs</h1>
+        <button id="Alert">Alert</button>
+        <button id="Confirm">Confirm</button>
+        <button id="Prompt">Prompt</button>
+        <button id="SaferPrompt">Safer Prompt</button>
+        <br>
+        <output></output>
+
+        <br>
+        <hr>
+
+        <h2>Custom Dialogs</h2>
+        <button id="cAlert">Alert</button>
+        <button id="cConfirm">Confirm</button>
+        <button id="cPrompt">Prompt</button>
+        <br>
+        <output></output>
+
+
+        <template>
+
+        </template>
+
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.0/purify.js" integrity="sha512-Jv1LuJlYi60auZ8kNw/Yjzpk0MK2mwF2OhA51j+fZZMcNvctE/S8KODl0kpnwa4emUs9Etz0hxOkp0wNpbvpnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // alert
+        document.getElementById("Alert").addEventListener("click", function(){ 
+            document.getElementsByTagName("output")[0].value = "";
+            //
+            setTimeout(function () { alert("Alert pressed!"); }, 1);
+            //alert("Alert Pressed!"); 
+        });
+
+        // Confirm
+        document.getElementById("Confirm").addEventListener("click", confirmation);
+        function confirmation() {
+            document.getElementsByTagName("output")[0].value = "";
+            setTimeout(function() {
+                let result = "The value returned by the confirm method is : " + confirm("Do you confirm this?");
+                // document.getElementsByTagName("output")[0].innerText = result;
+                document.getElementsByTagName("output")[0].value = result;
+            }, 1);
+        }
+
+        // Prompt
+        regularPromot = () =>{
+            document.getElementsByTagName("output")[0].value = "";
+            setTimeout(function() {
+                let name = prompt("What is your name?");
+                if(name === "" || name == null){
+                    document.getElementsByTagName("output")[0].value = "User didn’t enter anything";
+                }
+                else {
+                    document.getElementsByTagName("output")[0].value = "Prompt result: " + name;    
+                }
+            },1);
+
+            
+        }
+        document.getElementById("Prompt").addEventListener("click", regularPromot);
+
+
+        // Safer Prompt
+        document.getElementById("SaferPrompt").addEventListener("click", safePromot);
+        function safePromot(){
+            document.getElementsByTagName("output")[0].innerHTML = "";
+            setTimeout(function() {
+                let name = DOMPurify.sanitize(prompt("What is your name?"));
+                if(name === "" || name == null){
+                    document.getElementsByTagName("output")[0].innerText = "User didn’t enter anything";
+                }
+                else {
+                    document.getElementsByTagName("output")[0].innerText = "Prompt result: " + name;    
+                }    
+            },1);
+            
+        }  
+    </script>
+
+    <script type="module" >
+        import {customAlert, customComfirm, customPrompt} from './customdialog.js';
+        document.getElementById("cAlert").addEventListener("click", function(){customAlert()});
+        document.getElementById("cConfirm").addEventListener("click", function(){customComfirm()});
+        document.getElementById("cPrompt").addEventListener("click", function(){customPrompt()});
+    </script>
+
+</html>

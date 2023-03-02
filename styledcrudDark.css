@@ -1,0 +1,141 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background-color: #010101;
+}
+
+/* dialog */
+dialog{
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+}
+dialog p{
+    margin-top: 5px;
+    color: white;
+}
+dialog input, dialog textarea{
+    background-color: #333;
+    color: white;
+}
+dialog label{
+    font-size: 12px;
+    color: #c4c4c4;
+}
+#postTitle, #editTitle {
+    margin-bottom: 9px;
+}
+dialog button, dialog .cancel{
+    background-color: #333;
+    color:#ffffff;
+    border: none;
+    border-radius: 3px;
+    padding:5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    transition: 0.1s;
+}
+dialog button:hover, dialog .cancel:hover{
+    background-color: #444;
+}
+
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: #222;
+}
+header button{
+    border: none;
+    margin-left: auto;
+    background-color: #222;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header button:hover{
+    background-color: #333;
+
+}
+header h1{
+    margin:0;
+    margin-left: 8vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+header h1 span{
+    font-size: 2.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffbf00;
+}
+
+/* main */
+main{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    background-color: #010101;
+}
+
+.individualPost h3{
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.individualPost h4{
+    font-size: 12px;
+    font-weight: 300;
+    color: #c4c4c4;
+    margin-top: 5px;
+}
+.individualPost p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.individualPost hr{
+    border: 0;
+    height: 1px;
+    background-color: #222;
+}
+main button{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+    margin-right: 2px;
+    transition: 0.1s;
+    background-color: #333;
+}
+main button:hover{
+    background-color:#d5d5d5;
+    background-color: #444;
+}
+
+
+
+
+/* footer */
+footer{
+    padding-top: 20px;
+    padding-left: 8vw;
+    margin-bottom: 30px;
+}
+#newBtn{
+    color:white;
+    background-color:#222;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.1s;
+    border: none;
+    border-radius: 5px;
+}
+#newBtn:hover{
+    background-color: #333;
+}

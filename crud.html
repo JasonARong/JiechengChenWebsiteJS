@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="HW4 part3" />
+        <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog Post</title>
+        <script>
+            var array = [];
+            if (localStorage.length == 0){
+                array = [["post 1","Tue Feb 28 2023 16:08:21 GMT-0800 (Pacific Standard Time)","post 1 summary "],
+                ["post 2","Tue Feb 28 2023 16:08:42 GMT-0800 (Pacific Standard Time)","post 2 summary"],
+                ["post 3","Tue Feb 28 2023 16:09:06 GMT-0800 (Pacific Standard Time)","post 3 summary"]];
+    
+            }
+            
+            let roughArray = localStorage.getItem("myArray");
+            if(roughArray != null && roughArray != ''){
+                array = JSON.parse(localStorage.getItem("myArray"));
+            }
+            if(array !== null){
+                if(array.length != 0)
+                {
+                    console.log('array: '+ array);
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <dialog id="popUp" >
+            <form method="dialog">
+                <label for="postTitle">Post Title</label><br>
+                <input type="text" id="postTitle" name="postTitle" value="" required><br>
+                <label for="postSummary">Post Summary</label><br>
+                <textarea id="postSummary" name="postSummary" required></textarea><br><br>
+                <div>
+                    <input type="submit" value="Cancel" formnovalidate>
+                    <button id="okBtn" value="none">OK</button>
+                </div>
+            </form>
+        </dialog> 
+        <dialog id="editPopUp" >
+            <form method="dialog">
+                <label for="editTitle">Edit Title</label><br>
+                <input type="text" id="editTitle" name="editTitle" value="" required><br>
+                <label for="editSummary">Edit Summary</label><br>
+                <textarea id="editSummary" name="editSummary" required></textarea><br><br>
+                <div>
+                    <input type="submit" value="Cancel" formnovalidate>
+                    <button id="okEditBtn" value="none">OK</button>
+                </div>
+            </form>
+        </dialog> 
+        <dialog id="deletePopUp" >
+            <p>Are you sure to delete?</p>
+            <form method="dialog">
+                <div>
+                    <input type="submit" value="Cancel" formnovalidate>
+                    <button value="Yes">Yes</button>
+                </div>
+            </form>
+        </dialog> 
+
+
+        <h1>Blog Posts</h1>
+        <hr>
+        <template id="blogPost">
+            <section>
+                <h3>Post Title</h3>
+                <h4>Post Date</h4>
+                <p>Post Title</p>
+                <div>
+                    <button class="delete">Delete</button>
+                    <button class="edit">Edit</button>
+                </div> 
+                <hr>
+            </section>         
+        </template>
+
+        <main id="posts">
+            <p id="noPost"></p>
+        </main>
+        <button id="newBtn">Add New</button>
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.0/purify.js" integrity="sha512-Jv1LuJlYi60auZ8kNw/Yjzpk0MK2mwF2OhA51j+fZZMcNvctE/S8KODl0kpnwa4emUs9Etz0hxOkp0wNpbvpnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module">
+            import {addPost, creatPost} from './blog.js';
+
+            window.addEventListener("load", (event) => {
+                console.log("page is fully loaded");
+                
+                if(array !== null){
+                    if(array.length != 0)
+                    {
+                        array.forEach(onloadPrint);    
+                    }
+                    else{
+                        document.getElementById("noPost").innerText= 'No Blog Posts!';
+                    }             
+                }            
+            });
+
+            function onloadPrint(post){
+                creatPost(post);
+            }
+
+
+            //add new post
+            document.getElementById("newBtn").addEventListener("click", function(){addPost(array);});
+
+
+        </script>
+    </body>
+</html>
